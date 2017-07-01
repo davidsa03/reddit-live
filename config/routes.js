@@ -32,7 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/reddit/:subreddit': {
+  '/r/:subreddit': {
     controller: 'reddit',
     action: 'home'
   },
