@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">Reddit</h1>
+  <div id="reddit"></div>
+</div>
+
+<script src="/js/dependencies/sails.io.js"></script>
+<script>
+io.socket.on('post', function(redditPost) {  
+  var data = $('<h3><a target="_blank" href=\'' + redditPost.link + '\'>' + redditPost.title + '</a></h3><hr />');
+  $('#reddit').prepend(data);
+});
+</script>
